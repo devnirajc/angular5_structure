@@ -19,7 +19,9 @@ describe('BulkOrderComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it(`should have as title 'app'`, async(() => {
+    const fixture1 = TestBed.createComponent(BulkOrderComponent);
+    const app = fixture1.debugElement.componentInstance;
+    expect(app.title).toEqual('bulk-order');
+  }));
 });

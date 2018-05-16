@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bulk-order.component.scss']
 })
 export class BulkOrderComponent implements OnInit {
-
+  title = 'bulk-order';
   constructor() { }
 
   ngOnInit() {
