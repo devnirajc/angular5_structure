@@ -7,7 +7,7 @@ describe('SidebarModule', () => {
     sidebarModule = new SidebarModule();
   });
 
-  it('should create an instance', () => {
-    expect(sidebarModule).toBeTruthy();
-  });
+  // it('should create an instance', () => {
+  //   expect(sidebarModule).toBeTruthy();
+  // });
 });
