@@ -25,8 +25,8 @@ jobs:
           - v1-dependencies-
 
       - run: 
-        name: Install local dependencies
-        command: npm install
+          name: Install local dependencies
+          command: npm install
 
       - save_cache:
           paths:
@@ -35,8 +35,8 @@ jobs:
         
       # run tests!
       - run: 
-        name: Run test cases
-        command: npm test
+          name: Run test cases
+          command: npm test
       
 
 
