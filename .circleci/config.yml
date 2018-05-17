@@ -36,7 +36,7 @@ jobs:
       # run tests!
       - run: 
           name: Run test cases
-          command: npm test
+          command: ng test
       
 
 
