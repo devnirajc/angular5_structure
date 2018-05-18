@@ -1,5 +1,39 @@
-<p>
-  sidebar works!
-</p>
-<a routerLink="/order-collection">Order Collection</a>
-<a routerLink="/order-collection/new-order">New Order</a>
+<nav class="sidebar col-md-2">
+  <div class="row">
+      <div class="list-group col-md-12">
+          <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;Dashboard
+          </a>
+          <a routerLink="/search" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-table"></i>&nbsp;Search
+          </a>
+          <a routerLink="/order-collection" [routerLinkActive]="['router-link-active']" class="list-group-item" >
+            <span>
+                <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;Order
+            </span>
+          </a>
+          <!-- <div class="nested-menu">
+            
+            <li class="nested" [class.expand]="showMenu === 'pages'">
+              <ul class="submenu">
+                <li>
+                  <a routerLink="/order/new-order" [routerLinkActive]="['router-link-active']">
+                    <span>New Order</span>
+                  </a>
+                </li>
+                <li>
+                  <a routerLink="/order/bulk-order" [routerLinkActive]="['router-link-active']">
+                    <span>Bulk Order</span>
+                  </a>
+                </li>
+                <li>
+                  <a routerLink="/order/standing-order" [routerLinkActive]="['router-link-active']">
+                    <span>Standing Order</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </div> -->
+        </div>
+  </div>
+</nav>

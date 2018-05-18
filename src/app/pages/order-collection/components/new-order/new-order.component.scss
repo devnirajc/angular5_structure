@@ -1,0 +1,42 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+ 
+$grey : #f2f2f2;
+.dashboard {
+    margin-top: 70px;
+}
+.new-order{
+    margin-top: 70px;
+    font-size: 14px;
+}
+
+:host /deep/ ngb-datepicker {
+    background: $grey;
+    font-size: 12px;
+}
+
+.addLink{
+    cursor: pointer;
+    font-size: 12px;
+}
+
+@include media-breakpoint-only(xs){
+   
+}
+
+@include media-breakpoint-up(sm) { 
+    .customTblCls.table th, .customTblCls.table td{
+        padding: 5px 20px;
+    }
+    /deep/ .customTblCls.table th{
+        background-color: $grey;
+        font-size: 13px;
+    }
+}
+.error{
+    color: #ea2d2d;
+    font-size: 12px;
+    font-weight: 600;
+    background: #ffe5ea;
+    padding: 2px 10px;
+    border-radius: 4px;
+}

@@ -1,0 +1,35 @@
+<div class="order col-md-10 pull-right">
+  <h3 class="text-muted">Order Page</h3>
+  <hr>
+  <div class="row">
+    <div class="col-md-2">
+      <button type="button" class="btn btn-dark btn-sm" (click)="openVerticallyCentered(content)">Create Order</button>
+    </div>
+  </div>
+
+  <!-- Create Dialog -->
+  <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Create Order</h4>
+              <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="text-align: center">
+              <p>
+                <button type="button" class="btn btn-sm" routerLink="/order/new-order" (click)="c('Close click')">New Order</button>
+              </p>
+              <p>
+                <button type="button" class="btn btn-sm" routerLink="/order/bulk-order" (click)="c('Close click')">Bulk Order</button>
+              </p>
+              <p>
+                <button type="button" class="btn btn-sm" routerLink="/order/standing-order" (click)="c('Close click')">Standing Order</button>
+              </p>
+            </div>
+        </div>  
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+      </div> -->
+    </ng-template>
+</div>

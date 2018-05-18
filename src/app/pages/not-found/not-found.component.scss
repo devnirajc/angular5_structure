@@ -1,0 +1,22 @@
+@import '../../../styles/app.scss';
+
+.pnfContent{
+    height: 100% !important;
+    position: absolute;
+    width: 100%;
+}
+
+.pnfContent .fa{
+    font-size: 50px;
+    color: #7b7878;
+}
+
+.pnfContent p {
+    font-size: 14px;
+    color: $light_gray;
+}
+
+.pnfContent a {
+    color: $secondary;
+    font-size: 12px;
+}
